@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        coronaJS
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+        body{
+            background-color: #3F5CEF;
+            font-family: 'Roboto';
+            text-align: center;
+        }
+        h1 {
+            color: #3F5CEF;
+        }
+        #main_box {
+            background-color: #fff;
+            width: 80%;
+            max-width: 500px;
+            color: #3F5CEF;
+            font-size: 1.5em;
+            margin: auto;
+        }
+        li {
+            padding: 10px 15px;
+            background-color: #3F5CEF;
+            color: #ffffff;
+            list-style: none;
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 20px; 
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .hide_this {
+            display: none;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div id="main_box">
+                <h1> coronaJS</h1>
+                <a href="./no_social_distancing.html"><li>No Social Distancing</li></a>
+                <a href="./social_distancing.html"><li>Social Distancing</li></a>
+                <a href="./young_age.html"><li>Young Age</li></a>
+                <a href="./old_age.html"><li>Old age</li></a>
+                <br>
+                <p class="hide_this" id="warning">Psst! Shift from portrait mode to landscape and reload! #sadReaxOnly</p>
+        </div>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script>
+            (function() {
+                if (window.innerWidth < 600)
+                {
+                    $("#warning").removeClass("hide_this");
+                    $("a").addClass("hide_this");
+                }
+            }());
+        </script>
+    </body>
+</html>

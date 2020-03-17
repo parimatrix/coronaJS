@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #162332;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+#info {
+    background-color: #162332;
+    margin-bottom: 15px;
+    color: #fff;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+#world {
+    background-color: #162332;
+}
+#top_banner {
+    min-width: 600px;
+    background-color: #fff;
+    color: #E30425;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
